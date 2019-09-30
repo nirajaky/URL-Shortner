@@ -1,0 +1,21 @@
+<% include ./partials/header %>
+	<h3> Total number of visits on that short url is : <strong><%= foundUser[0].count %></strong> </h3>
+	
+
+	<table border = "3">
+		<thead>
+			<tr>
+				<th>Date</th>
+				<th>Number Of Visits</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td><%= foundUser[0].created %></td>
+				<td><%= foundUser[0].count %></td>
+			</tr>
+		</tbody>
+	</table>
+
+	<div id="piechart"></div>
+<% include ./partials/footer %>
