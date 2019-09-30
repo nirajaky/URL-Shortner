@@ -1,0 +1,28 @@
+<% include ./partials/header %>
+
+<div> 
+	<form action="/index" method="GET">
+		<span>
+			<h3>Enter URL to Add to database in CODE Form </h3> 
+		</span>
+		<input type="text" name="AddUrl" placeholder="Enter URL">
+		<input type="submit">
+		<div>
+			<p> Your Code for your URL is <strong> <%= random %> </strong> </p> 
+		</div>
+		
+	</form>
+</div>
+
+<div> 
+	<form action="/index/code" method="GET">
+		<span>
+			<h3>Enter CODED URL to visit your URL Link </h3> 
+		</span>
+		<input type="text" name="url" placeholder="Enter URL" value=" http://APP_URL/">
+		<input type="submit">
+	</form>
+</div>
+
+
+<% include ./partials/footer %>
